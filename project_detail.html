@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section id="project-detail">
+    <h2>{{ project.title }}</h2>
+    <p>{{ project.details|replace('\n', '<br>')|safe }}</p>
+
+    {% if project.images %}
+    <div class="project-images">
+        {% for img in project.images %}
+        <img src="{{ url_for('static', filename='images/' + img) }}" alt="{{ project.title }}">
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if project.pdf %}
+    <p><a href="{{ url_for('static', filename='pdf/' + project.pdf) }}" target="_blank">Download Full PDF</a></p>
+    {% endif %}
+</section>
+{% endblock %}
