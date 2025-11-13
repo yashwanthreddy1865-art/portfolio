@@ -1,0 +1,35 @@
+.header-center {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f8f8f8;
+}
+
+.header-center .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.header-center h1 {
+    margin: 10px 0 5px 0;
+    font-size: 2em;
+}
+
+.header-center p {
+    margin: 0 0 15px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.header-center nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.header-center nav a:hover {
+    color: #0077b5;
+}
