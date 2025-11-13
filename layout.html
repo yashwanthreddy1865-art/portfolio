@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashwanth Reddy Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Centered Header -->
+    <header class="header-center">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Photo" class="profile-photo">
+        <h1>Yashwanth Kanthala</h1>
+        <p>Entry level Mechanical Engineer</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact" style="text-align:center; padding:40px 20px;">
+        <h2>Contact Me</h2>
+        <p>Email: yashwanthreddy1865k@gmail.com</p>
+        <p>Phone: +1 203-202-4823</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yashwanth-kanthala-328669235/" target="_blank">Yashwanth Kanthala</a></p>
+    </section>
+
+    <footer style="text-align:center; padding:20px 0;">
+        <p>© 2025 Yashwanth Reddy — All rights reserved.</p>
+    </footer>
+</body>
+</html>
